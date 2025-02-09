@@ -1,0 +1,42 @@
+<div class="card flex flex-column  md:justify-content-between row-gap-3">
+    <app-default-menubar></app-default-menubar>
+    <div class="second-div">
+
+
+        <div class="main-card-body">
+            <div class="card-content">
+                <b style="color: black;">Sales Overview</b>
+                <p-chart width="40vw" height="40vh" type="bar" [data]="basicData" [options]="basicOptions" />
+                <div class="card-footer">
+                    <small>Data as of October 2024</small>
+                </div>
+
+
+            </div>
+
+            <div class="card-content-two">
+
+
+                <b>Total Orders</b>
+                <div class="flip-card-order">
+                    486
+                </div>
+            </div>
+
+            <div class="card-content-update">
+                <b class="title_update">Updates</b>
+                <div class="flip-card-order">
+                    No Any Updates
+                </div>
+            </div>
+        </div>
+
+        <div class="secondry-card-header">
+
+            <div class="order-card-content">
+                <b style="text-align: center; color: black;">Order Status</b>
+                <p-chart type="bar" [data]="data" [options]="options" />
+            </div>
+        </div>
+    </div>
+</div>
